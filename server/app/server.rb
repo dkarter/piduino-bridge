@@ -8,7 +8,7 @@ class Server < Sinatra::Base
     set :server, :puma
   end
 
-  get '/' do
+  get '/blink' do
     @serial = Serial.new
     @serial.send_signal
     'Hello World'
