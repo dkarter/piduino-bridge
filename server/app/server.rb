@@ -12,9 +12,11 @@ class Server < Sinatra::Base
     set :server, :puma
   end
 
-  get '/blink' do
+  get '/dispene' do
+    puts '----------- Initializing port'
     @serial = Serial.new
+    puts '----------- Sending signal'
     @serial.send_signal
-    'Hello World'
+    'Treat dispensed!'
   end
 end
