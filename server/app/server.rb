@@ -1,6 +1,10 @@
+require 'dotenv'
+Dotenv.load
+
 require 'sinatra'
 require_relative './serial'
 
+# Server for raspberry pi
 class Server < Sinatra::Base
   configure do
     set :bind, '0.0.0.0'
