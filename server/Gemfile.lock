@@ -2,7 +2,9 @@ GEM
   remote: https://rubygems.org/
   specs:
     dotenv (2.1.1)
-    puma (3.6.0)
+    nio4r (2.5.8)
+    puma (4.3.11)
+      nio4r (~> 2.0)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
