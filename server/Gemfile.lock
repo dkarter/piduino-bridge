@@ -3,7 +3,7 @@ GEM
   specs:
     dotenv (2.1.1)
     puma (3.6.0)
-    rack (1.6.4)
+    rack (1.6.13)
     rack-protection (1.5.3)
       rack
     serialport (1.3.1)
